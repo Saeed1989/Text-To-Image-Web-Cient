@@ -4,11 +4,11 @@ export async function POST(req) {
   const { prompt } = body;
 
   try {
-    const response = await fetch('http://192.168.0.104:7860/sdapi/v1/txt2img', {
+    const response = await fetch('http://localhost:7860/sdapi/v1/txt2img', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        prompt: 'blurry, low quality',
+        prompt: prompt,
         negative_prompt: 'blurry, low quality',
         steps: 20,
         cfg_scale: 7,

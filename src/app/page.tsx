@@ -22,8 +22,8 @@ export default function Home() {
     try {
       let prompt = text;
       // Improve the prompt quality using Genkit
-      const improvedPromptResult = await improvePromptQuality({initialPrompt: text});
-      prompt = improvedPromptResult.refinedPrompt;
+      // const improvedPromptResult = await improvePromptQuality({initialPrompt: text});
+      // prompt = improvedPromptResult.refinedPrompt;
 
       // Generate the image using Genkit
       //const imageResult = await generateImageFromText({prompt: prompt});
